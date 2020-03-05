@@ -24,6 +24,10 @@
         font-size: 1rem;
         border: 1px solid @border;
     }
+    input[type="checkbox"] {
+        height: auto;
+        width: auto;
+    }
     .switch {
         border: 1px solid @border;
         height: 33.5px;
@@ -31,6 +35,7 @@
         padding: 5px;
         box-sizing: border-box;
         background: @white;
+        cursor: pointer;
         @{dark-mode} {
             border-color: @darkborder;
             background: @darkwhite;
@@ -52,8 +57,16 @@
                 transform: translateX(23px);
             }
         }
-        &.test {
-            color: red;
+    }
+    .radios {
+        li {
+            padding: 5px 0;
+            display: flex;
+            input[type="radio"] {
+                margin-right: 5px;
+                height: auto;
+                width: auto;
+            }
         }
     }
 }
