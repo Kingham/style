@@ -20,5 +20,9 @@
     }
     &.subtle {
         .button-template(@bg);
+        color: @black;
+        @{dark-mode} {
+            .button-template(@darkbg);
+        }
     }
 }
