@@ -4,4 +4,14 @@
     display: inline-flex;
     padding: @padding @padding*2;
     cursor: pointer;
+    .button-template(@color) {
+        background: @color;
+        color: @white;
+        &:hover {
+            background: darken(@color, 5%);
+        }
+    }
+    .button-delete {
+        .button-template(@red);
+    }
 }
