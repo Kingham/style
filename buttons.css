@@ -200,3 +200,7 @@ table {
 html {
   font-size: 14px;
 }
+.button {
+  display: inline-flex;
+  padding: 10px 20px;
+}

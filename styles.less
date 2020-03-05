@@ -1,10 +1,20 @@
-//@media @mobile { } // for mobile
-//@{dark-mode}{ } // for dark mode
+@red:   			#C53826;
+@green: 			#0AD957;
+	
+@white: 			#FFFFFF;
+@black:				#000000;
+	
+@bg:    			#F7F8FA;
+@border:			#E2E3E9;
+
+@darkbg:  			#282934;
+@darkwhite: 		#333442;
+@darkborder: 		#434556;
 
 @margin:			10px;
 @padding:			10px;
 
-@dark-mode: ~'body.dark-mode &'; // putting the & at the end of the selector makes it jump to the front of the selector
+@dark-mode: 		~'body.dark-mode &';
  
 @screen-xs-min:     480px;
 @screen-sm-min:     481px;
@@ -56,9 +66,8 @@
     flex-basis: 100%;
 }
 
-.grow {
-    flex-grow: 1;
-}
+.shrink {flex-shrink: 1;}
+.grow 	{flex-grow: 1;}
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,

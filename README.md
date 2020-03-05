@@ -7,5 +7,5 @@
 
 ### Dark Mode
 ```
-//@{dark-mode}{ }
+@{dark-mode}{ }
 ```
