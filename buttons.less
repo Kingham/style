@@ -1,16 +1,17 @@
 @import 'https://kingham.github.io/style/styles.less';
 
+.button-template(@color) {
+    background: @color;
+    color: @white;
+    &:hover {
+        background: darken(@color, 5%);
+    }
+}
+
 .button {
     display: inline-flex;
     padding: @padding @padding*2;
-    cursor: pointer;
-    .button-template(@color) {
-        background: @color;
-        color: @white;
-        &:hover {
-            background: darken(@color, 5%);
-        }
-    }
+    cursor: pointer;    
     &.button-delete {
         .button-template(@red);
     }
