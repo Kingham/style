@@ -106,3 +106,28 @@ body.dark-mode .block input[type="number"] {
   font-size: 1rem;
   border: 1px solid #E2E3E9;
 }
+.block .switch {
+  border: 1px solid #E2E3E9;
+  height: 33.5px;
+  width: 50px;
+  padding: 5px;
+  box-sizing: border-box;
+  background: #FFFFFF;
+}
+body.dark-mode .block .switch {
+  border-color: #434556;
+  background: #333442;
+}
+.block .switch .switcher {
+  width: 15px;
+  height: 22.5px;
+  display: inline-block;
+  transition: 0.2s all ease-in;
+}
+.block .switch.on .switcher {
+  background: #0AD957;
+}
+.block .switch.off .switcher {
+  background: #C53826;
+  transform: translateX(23px);
+}

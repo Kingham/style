@@ -24,4 +24,33 @@
         font-size: 1rem;
         border: 1px solid @border;
     }
+    .switch {
+        border: 1px solid @border;
+        height: 33.5px;
+        width: 50px;
+        padding: 5px;
+        box-sizing: border-box;
+        background: @white;
+        @{dark-mode} {
+            border-color: @darkborder;
+            background: @darkwhite;
+        }
+        .switcher {
+            width: 15px;
+            height: 22.5px;
+            display: inline-block;
+            .transition;
+        }
+        &.on {
+            .switcher {
+                background: @green;
+            }
+        }
+        &.off {
+            .switcher {
+                background: @red;
+                transform: translateX(23px);
+            }
+        }
+    }
 }
