@@ -12,7 +12,13 @@
     display: inline-flex;
     padding: @padding @padding*2;
     cursor: pointer;    
-    &.button-delete {
+    &.delete {
         .button-template(@red);
+    }
+    &.save, &.submit {
+        .button-template(@green);
+    }
+    &.subtle {
+        .button-template(@bg);
     }
 }

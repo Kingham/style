@@ -205,10 +205,26 @@ html {
   padding: 10px 20px;
   cursor: pointer;
 }
-.button.button-delete {
+.button.delete {
   background: #C53826;
   color: #FFFFFF;
 }
-.button.button-delete:hover {
+.button.delete:hover {
   background: #b03222;
+}
+.button.save,
+.button.submit {
+  background: #0AD957;
+  color: #FFFFFF;
+}
+.button.save:hover,
+.button.submit:hover {
+  background: #09c14d;
+}
+.button.subtle {
+  background: #F7F8FA;
+  color: #FFFFFF;
+}
+.button.subtle:hover {
+  background: #e7eaf0;
 }
