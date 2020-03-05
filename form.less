@@ -11,6 +11,11 @@
         padding: 0 10px;
         font-size: 1rem;
         border: 1px solid @border;
+        background: @white;
+        @{dark-mode} {
+            background: @darkwhite;
+            border-color: @darkborder;
+        }
     } 
     textarea {
         width: 100%;

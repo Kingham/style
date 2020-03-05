@@ -89,6 +89,15 @@
   padding: 0 10px;
   font-size: 1rem;
   border: 1px solid #E2E3E9;
+  background: #FFFFFF;
+}
+body.dark-mode .block input[type="text"],
+body.dark-mode .block input[type="date"],
+body.dark-mode .block input[type="datetime-local"],
+body.dark-mode .block input[type="time"],
+body.dark-mode .block input[type="number"] {
+  background: #333442;
+  border-color: #434556;
 }
 .block textarea {
   width: 100%;
