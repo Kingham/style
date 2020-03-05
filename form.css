@@ -124,10 +124,10 @@ body.dark-mode .block .switch {
   display: inline-block;
   transition: 0.2s all ease-in;
 }
-.block .switch.on .switcher {
+.block .switch.on-switch .switcher {
   background: #0AD957;
 }
-.block .switch.off .switcher {
+.block .switch.off-switch .switcher {
   background: #C53826;
   transform: translateX(23px);
 }
