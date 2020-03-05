@@ -131,3 +131,6 @@ body.dark-mode .block .switch {
   background: #C53826;
   transform: translateX(23px);
 }
+.block .switch.test {
+  color: red;
+}
