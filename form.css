@@ -1,3 +1,78 @@
+.transition {
+  transition: 0.2s all ease-in;
+}
+._10 {
+  width: 10%;
+}
+._20 {
+  width: 20%;
+}
+._30 {
+  width: 30%;
+}
+._40 {
+  width: 40%;
+}
+._50 {
+  width: 50%;
+}
+._60 {
+  width: 60%;
+}
+._70 {
+  width: 70%;
+}
+._80 {
+  width: 80%;
+}
+._90 {
+  width: 90%;
+}
+._100 {
+  width: 100%;
+}
+.mt {
+  margin-top: 10px;
+}
+.mb {
+  margin-bottom: 10px;
+}
+.ml {
+  margin-left: 10px;
+}
+.mr {
+  margin-right: 10px;
+}
+.ma {
+  margin: 10px;
+}
+.pt {
+  padding-top: 10px;
+}
+.pb {
+  padding-bottom: 10px;
+}
+.pl {
+  padding-left: 10px;
+}
+.pr {
+  padding-right: 10px;
+}
+.pa {
+  padding: 10px;
+}
+.break {
+  width: 100%;
+  display: block;
+  height: 0px;
+  flex-basis: 100%;
+}
+.shrink {
+  flex-shrink: 1;
+}
+.grow {
+  flex-grow: 1;
+}
 .block {
   display: flex;
   align-items: center;
@@ -13,10 +88,12 @@
   box-sizing: border-box;
   padding: 0 10px;
   font-size: 1rem;
+  border: 1px solid #E2E3E9;
 }
 .block textarea {
   width: 100%;
   height: 100px;
   padding: 0 10px;
   font-size: 1rem;
+  border: 1px solid #E2E3E9;
 }
