@@ -85,6 +85,16 @@
                 border-color: @darkborder;
                 background: @darkwhite;
             }
+            li {
+                padding: 5px;
+                cursor: pointer;
+                &:hover {
+                    background: @bg;
+                    @{dark-mode} {
+                        background: @darkbg;
+                    }
+                }
+            }
         }
     }
 }

@@ -165,3 +165,13 @@ body.dark-mode .block .autocomplete-container ul {
   border-color: #434556;
   background: #333442;
 }
+.block .autocomplete-container ul li {
+  padding: 5px;
+  cursor: pointer;
+}
+.block .autocomplete-container ul li:hover {
+  background: #F7F8FA;
+}
+body.dark-mode .block .autocomplete-container ul li:hover {
+  background: #282934;
+}
