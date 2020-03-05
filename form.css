@@ -81,7 +81,8 @@
 .block input[type="date"],
 .block input[type="datetime-local"],
 .block input[type="time"],
-.block input[type="number"] {
+.block input[type="number"],
+.block select {
   height: 33.5px;
   width: 100%;
   font-family: inherit;
@@ -95,7 +96,8 @@ body.dark-mode .block input[type="text"],
 body.dark-mode .block input[type="date"],
 body.dark-mode .block input[type="datetime-local"],
 body.dark-mode .block input[type="time"],
-body.dark-mode .block input[type="number"] {
+body.dark-mode .block input[type="number"],
+body.dark-mode .block select {
   background: #333442;
   border-color: #434556;
 }
