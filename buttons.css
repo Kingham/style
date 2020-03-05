@@ -205,10 +205,10 @@ html {
   padding: 10px 20px;
   cursor: pointer;
 }
-.button .button-delete {
+.button.button-delete {
   background: #C53826;
   color: #FFFFFF;
 }
-.button .button-delete:hover {
+.button.button-delete:hover {
   background: #b03222;
 }
