@@ -1,0 +1,16 @@
+.block {
+  display: flex;
+  align-items: center;
+}
+.block input[type="text"],
+.block input[type="date"],
+.block input[type="datetime-local"],
+.block input[type="time"],
+.block input[type="number"] {
+  height: 30px;
+  width: 100%;
+}
+.block textarea {
+  width: 100%;
+  height: 100px;
+}
