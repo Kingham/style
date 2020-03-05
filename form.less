@@ -71,10 +71,20 @@
     }
     .autocomplete-container {
         position: relative;
+        &>* {
+            width: 100%;
+        }
         ul {
             position: absolute;
             top: 33.5px;
             left: 0px;
+            z-index: 1;
+            background: @white;
+            border: 1px solid @border;
+            @{dark-mode} {
+                border-color: @darkborder;
+                background: @darkwhite;
+            }
         }
     }
 }

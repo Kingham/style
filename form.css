@@ -150,8 +150,18 @@ body.dark-mode .block .switch {
 .block .autocomplete-container {
   position: relative;
 }
+.block .autocomplete-container > * {
+  width: 100%;
+}
 .block .autocomplete-container ul {
   position: absolute;
   top: 33.5px;
   left: 0px;
+  z-index: 1;
+  background: #FFFFFF;
+  border: 1px solid #E2E3E9;
+}
+body.dark-mode .block .autocomplete-container ul {
+  border-color: #434556;
+  background: #333442;
 }
