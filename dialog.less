@@ -1,0 +1,41 @@
+@import 'https://kingham.github.io/style/styles.less';
+
+.dialog-overlay {
+    z-index: 99;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    top: 0px;
+    left: 0px;
+    align-items: center;
+    justify-content: center;
+    background: fadeout(@black, 50%);
+}
+
+.dialog {
+    background: @white;
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    max-height: ~"calc(100vh - 50px)";
+    &>header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: @padding*2;
+        .close {
+            cursor: pointer;
+        }
+    }
+    &>section {
+        min-height: 100px;
+        flex-grow: 1;
+        overflow: auto;
+    }
+    &>footer {
+        display: flex;
+        justify-content: flex-end;
+        padding: @padding*2;
+    }
+}
