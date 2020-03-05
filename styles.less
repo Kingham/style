@@ -1,6 +1,9 @@
 //@media @mobile { } // for mobile
 //@{dark-mode}{ } // for dark mode
 
+@margin:			10px;
+@padding:			10px;
+
 @dark-mode: ~'body.dark-mode &'; // putting the & at the end of the selector makes it jump to the front of the selector
  
 @screen-xs-min:     480px;
@@ -34,10 +37,17 @@
 ._90    {width: 90%;}
 ._100   {width: 100%;}
 
-.mt {margin-top: 10px;}
-.mb {margin-bottom: 10px;}
-.ml {margin-left: 10px;}
-.mr {margin-right: 10px;}
+.mt {margin-top: @margin;}
+.mb {margin-bottom: @margin;}
+.ml {margin-left: @margin;}
+.mr {margin-right: @margin;}
+.ma {margin: @margin;}
+
+.pt {padding-top: @padding;}
+.pb {padding-bottom: @padding;}
+.pl {padding-left: @padding;}
+.pr {padding-right: @padding;}
+.pa {padding: @padding;}
 
 .break {
     width: 100%;

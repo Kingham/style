@@ -43,6 +43,24 @@
 .mr {
   margin-right: 10px;
 }
+.ma {
+  margin: 10px;
+}
+.pt {
+  padding-top: 10px;
+}
+.pb {
+  padding-bottom: 10px;
+}
+.pl {
+  padding-left: 10px;
+}
+.pr {
+  padding-right: 10px;
+}
+.pa {
+  padding: 10px;
+}
 .break {
   width: 100%;
   display: block;
