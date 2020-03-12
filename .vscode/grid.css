@@ -1,0 +1,142 @@
+.transition {
+  transition: 0.2s all ease-in;
+}
+._10 {
+  width: 10%;
+}
+._20 {
+  width: 20%;
+}
+._30 {
+  width: 30%;
+}
+._40 {
+  width: 40%;
+}
+._50 {
+  width: 50%;
+}
+._60 {
+  width: 60%;
+}
+._70 {
+  width: 70%;
+}
+._80 {
+  width: 80%;
+}
+._90 {
+  width: 90%;
+}
+._100 {
+  width: 100%;
+}
+.mt {
+  margin-top: 10px;
+}
+.mb {
+  margin-bottom: 10px;
+}
+.ml {
+  margin-left: 10px;
+}
+.mr {
+  margin-right: 10px;
+}
+.ma {
+  margin: 10px;
+}
+.pt {
+  padding-top: 10px;
+}
+.pb {
+  padding-bottom: 10px;
+}
+.pl {
+  padding-left: 10px;
+}
+.pr {
+  padding-right: 10px;
+}
+.pa {
+  padding: 10px;
+}
+.break {
+  width: 100%;
+  display: block;
+  height: 0px;
+  flex-basis: 100%;
+}
+.shrink {
+  flex-shrink: 1;
+}
+.grow {
+  flex-grow: 1;
+}
+table.table {
+  width: 100%;
+}
+table.table th {
+  padding: 10px;
+  border-bottom: 2px solid #E2E3E9;
+  text-align: left;
+  font-weight: 600;
+}
+body.dark-mode table.table th {
+  border-bottom-color: #434556;
+}
+table.table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #E2E3E9;
+}
+body.dark-mode table.table td {
+  border-bottom-color: #434556;
+}
+.top-filters {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.top-filters input,
+.top-filters select,
+.top-filters textarea,
+.top-filters input[type="datetime-local"] {
+  border: 1px solid #E2E3E9;
+  border-radius: 0px;
+  width: 100px;
+  height: 33.5px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+body.dark-mode .top-filters input,
+body.dark-mode .top-filters select,
+body.dark-mode .top-filters textarea,
+body.dark-mode .top-filters input[type="datetime-local"] {
+  background: #333442;
+  border-color: #434556;
+  color: #FFFFFF;
+}
+.top-filters > * {
+  margin-right: 10px;
+}
+.top-filters .mdc-paginator {
+  margin-left: auto;
+}
+.top-filters .mdc-paginator-container {
+  display: flex;
+  align-items: center;
+  width: 560px;
+}
+.top-filters .mdc-paginator-container > * {
+  margin-right: 10px;
+}
+.top-filters .mdc-paginator-container .mdc-paginator-range-actions {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+.top-filters .mdc-paginator-container .mdc-paginator-range-actions > * {
+  margin-right: 10px;
+}

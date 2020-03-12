@@ -17,8 +17,11 @@
     background: @white;
     display: flex;
     flex-direction: column;
-    min-width: 300px;
+    min-width: 400px;
     max-height: ~"calc(100vh - 50px)";
+    @{dark-mode} {
+        background: @darkwhite;
+    }
     &>header {
         display: flex;
         justify-content: space-between;

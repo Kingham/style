@@ -89,8 +89,11 @@
   background: #FFFFFF;
   display: flex;
   flex-direction: column;
-  min-width: 300px;
+  min-width: 400px;
   max-height: calc(100vh - 50px);
+}
+body.dark-mode .dialog {
+  background: #333442;
 }
 .dialog > header {
   display: flex;

@@ -1,0 +1,64 @@
+@import 'https://kingham.github.io/style/styles.less';
+
+table.table {
+    width: 100%;
+    th {
+        padding: 10px;
+        border-bottom: 2px solid @border;
+        text-align: left;
+        font-weight: 600;
+        @{dark-mode} {
+            border-bottom-color: @darkborder;
+        }
+    }
+    td {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid @border;
+        @{dark-mode} {
+            border-bottom-color: @darkborder;
+        }
+    }
+}
+
+.top-filters {
+    display: flex; 
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    input, select, textarea, input[type="datetime-local"] {
+        border: 1px solid @border;
+        border-radius: 0px;
+        width: 100px;
+        height: 33.5px;
+        padding: 10px;
+        box-sizing: border-box;
+        @{dark-mode}{
+            background: @darkwhite;
+            border-color: @darkborder;
+            color: @white;
+        }
+    }
+    &>* {
+        margin-right: 10px;
+    }
+    .mdc-paginator {
+        margin-left: auto;
+    }
+    .mdc-paginator-container {
+        display: flex;
+        align-items: center;
+        width: 560px;
+        &>* {
+            margin-right: 10px;
+        }
+        .mdc-paginator-range-actions {
+            display: flex;
+            align-items: center;
+            margin-right: 10px;
+            &>* {
+                margin-right: 10px;
+            }
+        }
+    }
+}
