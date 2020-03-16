@@ -8,7 +8,7 @@
     }
 }
 
-.button {
+button, .button {
     display: inline-flex;
     padding: @padding @padding*2;
     cursor: pointer;    
@@ -32,17 +32,19 @@
     .dropper {
         display: none;
         position: absolute;
-        top: 30px;
-        box-shadow: 0 5px 5px 0 fadeout(@black, 90%);
+        top: 100%;
         border: 1px solid @border;
-        background: @bg;
+        background: @white;
         @{dark-mode}{
-            background: @darkbg;
+            background: @darkwhite;
+            color: @white;
         }
         li {
-            padding: 10px;
             border-bottom: 1px solid @border;
             min-width: 150px;
+        }
+        &.right {
+            right: 0px;
         }
     }
     &:hover {

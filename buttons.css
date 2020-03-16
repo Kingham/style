@@ -73,39 +73,50 @@
 .grow {
   flex-grow: 1;
 }
+button,
 .button {
   display: inline-flex;
   padding: 10px 20px;
   cursor: pointer;
 }
+button.delete,
 .button.delete {
   background: #C53826;
   color: #FFFFFF;
 }
+button.delete:hover,
 .button.delete:hover {
   background: #b03222;
 }
+button.save,
 .button.save,
+button.submit,
 .button.submit {
   background: #0AD957;
   color: #FFFFFF;
 }
+button.save:hover,
 .button.save:hover,
+button.submit:hover,
 .button.submit:hover {
   background: #09c14d;
 }
+button.subtle,
 .button.subtle {
   background: #F7F8FA;
   color: #FFFFFF;
   color: #000000;
 }
+button.subtle:hover,
 .button.subtle:hover {
   background: #e7eaf0;
 }
+body.dark-mode button.subtle,
 body.dark-mode .button.subtle {
   background: #282934;
   color: #FFFFFF;
 }
+body.dark-mode button.subtle:hover,
 body.dark-mode .button.subtle:hover {
   background: #1d1e26;
 }
@@ -115,18 +126,20 @@ body.dark-mode .button.subtle:hover {
 .drop .dropper {
   display: none;
   position: absolute;
-  top: 30px;
-  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
+  top: 100%;
   border: 1px solid #E2E3E9;
-  background: #F7F8FA;
+  background: #FFFFFF;
 }
 body.dark-mode .drop .dropper {
-  background: #282934;
+  background: #333442;
+  color: #FFFFFF;
 }
 .drop .dropper li {
-  padding: 10px;
   border-bottom: 1px solid #E2E3E9;
   min-width: 150px;
+}
+.drop .dropper.right {
+  right: 0px;
 }
 .drop:hover .dropper {
   display: block;
