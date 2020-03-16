@@ -26,4 +26,34 @@
         }
     }
 }
-//test
+
+.drop {
+    position: relative;
+    .dropper {
+        display: none;
+        position: absolute;
+        top: 30px;
+        box-shadow: 0 5px 5px 0 fadeout(@black, 90%);
+        border: 1px solid @border;
+        background: @bg;
+        @{dark-mode}{
+            background: @darkbg;
+        }
+        li {
+            padding: 10px;
+            border-bottom: 1px solid @border;
+            min-width: 150px;
+        }
+    }
+    &:hover {
+        .dropper {
+            display: block;
+            li {
+                color: @black;
+                &:hover {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

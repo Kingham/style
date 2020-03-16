@@ -109,3 +109,31 @@ body.dark-mode .button.subtle {
 body.dark-mode .button.subtle:hover {
   background: #1d1e26;
 }
+.drop {
+  position: relative;
+}
+.drop .dropper {
+  display: none;
+  position: absolute;
+  top: 30px;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid #E2E3E9;
+  background: #F7F8FA;
+}
+body.dark-mode .drop .dropper {
+  background: #282934;
+}
+.drop .dropper li {
+  padding: 10px;
+  border-bottom: 1px solid #E2E3E9;
+  min-width: 150px;
+}
+.drop:hover .dropper {
+  display: block;
+}
+.drop:hover .dropper li {
+  color: #000000;
+}
+.drop:hover .dropper li:hover {
+  color: #fff;
+}
