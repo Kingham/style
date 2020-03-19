@@ -73,40 +73,72 @@
 .grow {
   flex-grow: 1;
 }
-.block {
-  display: flex;
-  align-items: center;
+.b {
+  border: 1px solid #E2E3E9;
 }
-.block input[type="text"],
-.block input[type="date"],
-.block input[type="datetime-local"],
-.block input[type="time"],
-.block input[type="number"],
-.block select {
-  height: 33.5px;
+body.dark-mode .b {
+  border-color: #434556;
+}
+.bg {
+  background: #F7F8FA;
+}
+body.dark-mode .bg {
+  background: #282934;
+}
+input,
+input[type="text"],
+input[type="number"],
+select {
   width: 100%;
   font-family: inherit;
   box-sizing: border-box;
   padding: 0 10px;
   font-size: 1rem;
-  border: 1px solid #E2E3E9;
+  height: 33.5px;
   background: #FFFFFF;
+  border: 1px solid #E2E3E9;
 }
-body.dark-mode .block input[type="text"],
-body.dark-mode .block input[type="date"],
-body.dark-mode .block input[type="datetime-local"],
-body.dark-mode .block input[type="time"],
-body.dark-mode .block input[type="number"],
-body.dark-mode .block select {
-  background: #333442;
+body.dark-mode input,
+body.dark-mode input[type="text"],
+body.dark-mode input[type="number"],
+body.dark-mode select {
   border-color: #434556;
 }
-.block textarea {
-  width: 100%;
-  height: 100px;
-  padding: 0 10px;
-  font-size: 1rem;
-  border: 1px solid #E2E3E9;
+body.dark-mode input,
+body.dark-mode input[type="text"],
+body.dark-mode input[type="number"],
+body.dark-mode select {
+  background: #282934;
+  border-color: #434556;
+  color: #FFFFFF;
+}
+input.valid,
+input[type="text"].valid,
+input[type="number"].valid,
+select.valid {
+  border-color: #0AD957;
+}
+input.invalid,
+input[type="text"].invalid,
+input[type="number"].invalid,
+select.invalid {
+  border-color: #C53826;
+}
+input[readonly],
+input[disabled],
+select[readonly],
+select[disabled] {
+  background: #F7F8FA;
+}
+body.dark-mode input[readonly],
+body.dark-mode input[disabled],
+body.dark-mode select[readonly],
+body.dark-mode select[disabled] {
+  background: #333442;
+}
+.block {
+  display: flex;
+  align-items: center;
 }
 .block input[type="checkbox"] {
   height: auto;
@@ -174,4 +206,10 @@ body.dark-mode .block .autocomplete-container ul {
 }
 body.dark-mode .block .autocomplete-container ul li:hover {
   background: #282934;
+}
+body.dark-mode .select2.select2-container--default .select2-selection--multiple,
+body.dark-mode .select2.select2-container--default .select2-selection--multiple,
+body.dark-mode .select2.select2-container--default .select2-selection--single {
+  background: #282934;
+  border-color: #434556;
 }

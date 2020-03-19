@@ -107,3 +107,10 @@ input[readonly], input[disabled], select[readonly], select[disabled] {
         }
     }
 }
+
+.select2.select2-container--default .select2-selection--multiple, .select2.select2-container--default .select2-selection--multiple, .select2.select2-container--default .select2-selection--single {
+    @{dark-mode}{
+        background: @darkbg;
+        border-color: @darkborder;
+    }
+}
