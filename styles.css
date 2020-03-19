@@ -73,3 +73,15 @@
 .grow {
   flex-grow: 1;
 }
+.b {
+  border: 1px solid #E2E3E9;
+}
+body.dark-mode .b {
+  border-color: #434556;
+}
+.bg {
+  background: #F7F8FA;
+}
+body.dark-mode .bg {
+  background: #282934;
+}

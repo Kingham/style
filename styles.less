@@ -68,3 +68,17 @@
 
 .shrink {flex-shrink: 1;}
 .grow 	{flex-grow: 1;}
+
+.b {
+    border: 1px solid @border;
+    @{dark-mode} {
+        border-color: @darkborder;
+    }
+}
+
+.bg {
+    background: @bg;
+    @{dark-mode} {
+        background: @darkbg;
+    }
+}
