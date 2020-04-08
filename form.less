@@ -14,11 +14,30 @@ input, input[type="text"], input[type="number"], select {
         border-color: @darkborder;
         color: @white;
     }
-    &.valid {
+    &.modified.valid {
         border-color: @green;
+        &[readonly], &[disabled] {
+            border-color: @border;
+            @{dark-mode} {
+                border-color: @darkborder;
+            }
+        }
     }
     &.invalid {
         border-color: @red;
+        &[readonly], &[disabled] {
+            border-color: @border;
+            @{dark-mode} {
+                border-color: @darkborder;
+            }
+        }
+    }
+}
+
+input[readonly], input[disabled], select[readonly], select[disabled] {
+    background: @bg;
+    @{dark-mode} {
+        background: @darkwhite;
     }
 }
 
@@ -104,6 +123,11 @@ input[readonly], input[disabled], select[readonly], select[disabled] {
                     }
                 }
             }
+        }
+    }
+    label {
+        &+button, &.button {
+            margin-left: 0;
         }
     }
 }

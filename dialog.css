@@ -73,6 +73,18 @@
 .grow {
   flex-grow: 1;
 }
+.b {
+  border: 1px solid #E2E3E9;
+}
+body.dark-mode .b {
+  border-color: #434556;
+}
+.bg {
+  background: #F7F8FA;
+}
+body.dark-mode .bg {
+  background: #282934;
+}
 .dialog-overlay {
   z-index: 99;
   position: absolute;
@@ -89,7 +101,7 @@
   background: #FFFFFF;
   display: flex;
   flex-direction: column;
-  min-width: 400px;
+  min-width: 500px;
   max-height: calc(100vh - 50px);
 }
 body.dark-mode .dialog {
@@ -114,4 +126,5 @@ body.dark-mode .dialog {
   display: flex;
   justify-content: flex-end;
   padding: 20px;
+  padding: 0px;
 }

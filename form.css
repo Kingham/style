@@ -112,17 +112,69 @@ body.dark-mode select {
   border-color: #434556;
   color: #FFFFFF;
 }
-input.valid,
-input[type="text"].valid,
-input[type="number"].valid,
-select.valid {
+input.modified.valid,
+input[type="text"].modified.valid,
+input[type="number"].modified.valid,
+select.modified.valid {
   border-color: #0AD957;
+}
+input.modified.valid[readonly],
+input[type="text"].modified.valid[readonly],
+input[type="number"].modified.valid[readonly],
+select.modified.valid[readonly],
+input.modified.valid[disabled],
+input[type="text"].modified.valid[disabled],
+input[type="number"].modified.valid[disabled],
+select.modified.valid[disabled] {
+  border-color: #E2E3E9;
+}
+body.dark-mode input.modified.valid[readonly],
+body.dark-mode input[type="text"].modified.valid[readonly],
+body.dark-mode input[type="number"].modified.valid[readonly],
+body.dark-mode select.modified.valid[readonly],
+body.dark-mode input.modified.valid[disabled],
+body.dark-mode input[type="text"].modified.valid[disabled],
+body.dark-mode input[type="number"].modified.valid[disabled],
+body.dark-mode select.modified.valid[disabled] {
+  border-color: #434556;
 }
 input.invalid,
 input[type="text"].invalid,
 input[type="number"].invalid,
 select.invalid {
   border-color: #C53826;
+}
+input.invalid[readonly],
+input[type="text"].invalid[readonly],
+input[type="number"].invalid[readonly],
+select.invalid[readonly],
+input.invalid[disabled],
+input[type="text"].invalid[disabled],
+input[type="number"].invalid[disabled],
+select.invalid[disabled] {
+  border-color: #E2E3E9;
+}
+body.dark-mode input.invalid[readonly],
+body.dark-mode input[type="text"].invalid[readonly],
+body.dark-mode input[type="number"].invalid[readonly],
+body.dark-mode select.invalid[readonly],
+body.dark-mode input.invalid[disabled],
+body.dark-mode input[type="text"].invalid[disabled],
+body.dark-mode input[type="number"].invalid[disabled],
+body.dark-mode select.invalid[disabled] {
+  border-color: #434556;
+}
+input[readonly],
+input[disabled],
+select[readonly],
+select[disabled] {
+  background: #F7F8FA;
+}
+body.dark-mode input[readonly],
+body.dark-mode input[disabled],
+body.dark-mode select[readonly],
+body.dark-mode select[disabled] {
+  background: #333442;
 }
 input[readonly],
 input[disabled],
@@ -206,6 +258,10 @@ body.dark-mode .block .autocomplete-container ul {
 }
 body.dark-mode .block .autocomplete-container ul li:hover {
   background: #282934;
+}
+.block label + button,
+.block label.button {
+  margin-left: 0;
 }
 body.dark-mode .select2.select2-container--default .select2-selection--multiple,
 body.dark-mode .select2.select2-container--default .select2-selection--multiple,

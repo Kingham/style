@@ -1,5 +1,8 @@
 @red:   			#C53826;
 @green: 			#0AD957;
+@yellow:            #E0CA3C;
+@orange:            #F18805;
+@blue:               #2274A5;
 	
 @white: 			#FFFFFF;
 @black:				#000000;
@@ -38,11 +41,13 @@
 
 ._10    {width: 10%;}
 ._20    {width: 20%;}
+._25    {width: 25%;}
 ._30    {width: 30%;}
 ._40    {width: 40%;}
 ._50    {width: 50%;}
 ._60    {width: 60%;}
 ._70    {width: 70%;}
+._75    {width: 75%;}
 ._80    {width: 80%;}
 ._90    {width: 90%;}
 ._100   {width: 100%;}
@@ -66,8 +71,14 @@
     flex-basis: 100%;
 }
 
+.flex {display: flex;}
+
 .shrink {flex-shrink: 1;}
 .grow 	{flex-grow: 1;}
+
+.text-right     {text-align: right;}
+.text-left      {text-align: left;}
+.text-center    {text-align: center;}
 
 .b {
     border: 1px solid @border;
@@ -75,10 +86,41 @@
         border-color: @darkborder;
     }
 }
+.bl {
+    border-left: 2px solid @border;
+    @{dark-mode} {
+        border-left-color: @darkborder;
+    }
+}
+.br {
+    border-right: 2px solid @border;
+    @{dark-mode} {
+        border-right-color: @darkborder;
+    }
+}
+.bt {
+    border-top: 2px solid @border;
+    @{dark-mode} {
+        border-top-color: @darkborder;
+    }
+}
+.bb {
+    border-bottom: 2px solid @border;
+    @{dark-mode} {
+        border-bottom-color: @darkborder;
+    }
+}
 
 .bg {
     background: @bg;
     @{dark-mode} {
         background: @darkbg;
+    }
+}
+
+.white {
+    background: @white;
+    @{dark-mode} {
+        background: @darkwhite;
     }
 }
