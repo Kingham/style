@@ -98,25 +98,25 @@ body.dark-mode .b {
   border-color: #434556;
 }
 .bl {
-  border-left: 2px solid #E2E3E9;
+  border-left: 1px solid #E2E3E9;
 }
 body.dark-mode .bl {
   border-left-color: #434556;
 }
 .br {
-  border-right: 2px solid #E2E3E9;
+  border-right: 1px solid #E2E3E9;
 }
 body.dark-mode .br {
   border-right-color: #434556;
 }
 .bt {
-  border-top: 2px solid #E2E3E9;
+  border-top: 1px solid #E2E3E9;
 }
 body.dark-mode .bt {
   border-top-color: #434556;
 }
 .bb {
-  border-bottom: 2px solid #E2E3E9;
+  border-bottom: 1px solid #E2E3E9;
 }
 body.dark-mode .bb {
   border-bottom-color: #434556;
