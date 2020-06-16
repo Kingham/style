@@ -133,6 +133,9 @@ body.dark-mode .bg {
 body.dark-mode .white {
   background: #333442;
 }
+header {
+  display: flex;
+}
 header.main {
   background: #FFFFFF;
   box-shadow: 0 5px 10px 0 rgba(40, 41, 52, 0.1);
@@ -140,5 +143,7 @@ header.main {
   height: 75px;
 }
 header .logo {
-  height: 75px;
+  height: 55px;
+  margin-top: 10px;
+  margin-left: 10px;
 }
