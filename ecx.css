@@ -133,14 +133,17 @@ body.dark-mode .bg {
 body.dark-mode .white {
   background: #333442;
 }
+.shadow {
+  box-shadow: 0 5px 10px 0 rgba(40, 41, 52, 0.1);
+}
 header {
   display: flex;
 }
 header.main {
   background: #FFFFFF;
-  box-shadow: 0 5px 10px 0 rgba(40, 41, 52, 0.1);
   width: 100%;
   height: 75px;
+  box-shadow: 0 5px 10px 0 rgba(40, 41, 52, 0.1);
 }
 header .logo {
   height: 55px;

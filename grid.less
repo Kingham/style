@@ -21,6 +21,56 @@ table.table {
     }
 }
 
+.r {
+    display: flex;
+    flex-wrap: wrap;
+}
+.block { //block
+    display: flex;
+    align-items: center;
+    width: 0;
+    flex-grow: 1;
+    padding: @padding @padding @padding @padding * 2;
+    label {
+        width: 200px;
+        flex-grow: 0;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        .mandatory {
+            color: @red;
+        }
+    }
+    .inline-help {
+        margin-left: auto;
+    }
+    &.blank {
+        padding: 0px 10px 10px 20px;
+        label {
+            display:none;
+        }    
+    }
+    .joiner {
+        padding: 0 10px;
+    }
+    &.no-grow {
+        flex-grow: 0;
+        width: auto;
+    }
+    &.check {
+        flex-direction: row-reverse;
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        &.fav {
+            flex-direction: row;
+        }
+    }
+    .autocomplete-container {
+        flex-grow: 1;
+    }
+}
+
 .top-filters {
     display: flex; 
     align-items: center;
@@ -61,3 +111,4 @@ table.table {
         }
     }
 }
+

@@ -8,13 +8,17 @@
 @lightblue: #0fd3e4;
 @black: #282934;
 
+.shadow {
+  box-shadow: 0 5px 10px 0 fadeout(@black, 90%);
+}
+
 header {
   display: flex;
   &.main {
     background: @white;
-    box-shadow: 0 5px 10px 0 fadeout(@black, 90%);
     width: 100%;
     height: 75px;
+    .shadow;
   }
   .logo {
     height: 55px;
