@@ -419,3 +419,6 @@ body.dark-mode .mobile-nav {
 .mobile-nav nav ul li ul li a:after {
   top: 11px;
 }
+.card {
+  display: block;
+}
