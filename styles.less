@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Biryani:wght@300;400;700;800;900&display=swap');
+
 @red:   			#C53826;
 @green: 			#0AD957;
 @yellow:            #E0CA3C;
@@ -383,3 +385,39 @@ app {
         }
     }
   }
+
+
+html {
+  font-size: 12px;
+}
+
+body, body * {
+  font-family: 'Biryani', sans-serif;
+}
+
+app, .main {
+  width: 100%;
+}
+
+
+.shadow {
+  box-shadow: 0 5px 10px 0 fadeout(@black, 90%);
+}
+
+header {
+  display: flex;
+  &.main {
+    background: @white;
+    width: 100%;
+    height: 75px;
+    .shadow;
+  }
+  &>.title {
+    flex-grow: 1;
+  }
+  .logo {
+    height: 55px;
+    margin-top: @padding;
+    margin-left: @padding;
+  }
+}

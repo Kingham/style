@@ -1,20 +1,3 @@
-@import 'https://kingham.github.io/style/styles.less';
-
-@import url('https://fonts.googleapis.com/css2?family=Biryani:wght@300;400;700;800;900&display=swap');
-
-html {
-  font-size: 12px;
-}
-
-body, body * {
-  font-family: 'Biryani', sans-serif;
-}
-
-.main {
-  width: 100%;
-}
-
-
 @bg: #f7f8fa;
 @red: #e40f48;
 @green: #2ac7a3;
@@ -22,25 +5,3 @@ body, body * {
 @blue: #193363;
 @lightblue: #0fd3e4;
 @black: #282934;
-
-.shadow {
-  box-shadow: 0 5px 10px 0 fadeout(@black, 90%);
-}
-
-header {
-  display: flex;
-  &.main {
-    background: @white;
-    width: 100%;
-    height: 75px;
-    .shadow;
-  }
-  &>.title {
-    flex-grow: 1;
-  }
-  .logo {
-    height: 55px;
-    margin-top: @padding;
-    margin-left: @padding;
-  }
-}
