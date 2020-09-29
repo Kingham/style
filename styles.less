@@ -134,6 +134,67 @@ a {
     box-shadow: 0 3px 20px 0 rgba(34,34,34,.05);
 }
 
+
+.title {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: @black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @{dark-mode} {
+        color: @white;
+    }
+}
+
+a.title {
+    position: relative;
+    &:hover{
+        cursor: pointer;
+        color: @black;
+    }
+}
+
+.subsubtitle {
+    font-size: .8rem;
+    font-weight: 500;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    color: @blue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @{dark-mode} {
+        color: @white;
+    }   
+}
+
+.subtitle {
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    color: @black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &.inline {
+        display: inline-flex;
+    }
+    @{dark-mode} {
+        color: @white;
+    }   
+    button, .button {
+        &:first-child {
+            margin-left: auto;
+        }
+    } 
+    &.pl {
+        padding-left: 20px;
+    }
+}
+
+
 app {
     display: flex;
     height: 100vh;
