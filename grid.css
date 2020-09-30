@@ -1,3 +1,38 @@
+@font-face {
+  font-family: 'Biryani';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Biryani Light'), local('Biryani-Light'), url(https://fonts.gstatic.com/s/biryani/v6/hv-TlzNxIFoO84YddeAxGTA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Biryani';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Biryani Regular'), local('Biryani-Regular'), url(https://fonts.gstatic.com/s/biryani/v6/hv-WlzNxIFoO84YdTUw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Biryani';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Biryani Bold'), local('Biryani-Bold'), url(https://fonts.gstatic.com/s/biryani/v6/hv-TlzNxIFoO84YddfA2GTA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Biryani';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: local('Biryani ExtraBold'), local('Biryani-ExtraBold'), url(https://fonts.gstatic.com/s/biryani/v6/hv-TlzNxIFoO84Yddew1GTA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Biryani';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: local('Biryani Black'), local('Biryani-Black'), url(https://fonts.gstatic.com/s/biryani/v6/hv-TlzNxIFoO84Yddcg0GTA.ttf) format('truetype');
+}
 .transition {
   transition: 0.2s all ease-in;
 }
@@ -209,6 +244,7 @@ app {
 .mobile-nav {
   background: #FFFFFF;
   box-shadow: 0 3px 20px 0 rgba(34, 34, 34, 0.05);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
   width: 225px;
   height: 100vh;
   flex-grow: 0;
@@ -419,6 +455,38 @@ body.dark-mode .mobile-nav {
 .mobile-nav nav ul li ul li a:after {
   top: 11px;
 }
+html {
+  font-size: 12px;
+}
+body,
+body * {
+  font-family: 'Biryani', sans-serif;
+}
+app,
+.main {
+  width: 100%;
+}
+.shadow {
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+}
+header {
+  display: flex;
+}
+header.main {
+  background: #FFFFFF;
+  width: 100%;
+  height: 75px;
+  box-shadow: 0 3px 20px 0 rgba(34, 34, 34, 0.05);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+}
+header > span.title {
+  flex-grow: 1;
+}
+header .logo {
+  height: 55px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
 table.table {
   width: 100%;
 }
@@ -594,7 +662,7 @@ body.dark-mode table.table td {
     position: static;
   }
 }
-.top-filters .filter-button .filter-dropdown {
+.filter-dropdown {
   position: absolute;
   top: 30px;
   background: #F7F8FA;
@@ -603,60 +671,60 @@ body.dark-mode table.table td {
   padding: 5px;
   min-width: 200px;
 }
-.top-filters .filter-button .filter-dropdown.filter-static {
+.filter-dropdown.filter-static {
   box-shadow: none;
   position: static;
   width: 100%;
   min-width: auto;
 }
-.top-filters .filter-button .filter-dropdown input[type="text"] {
+.filter-dropdown input[type="text"] {
   width: calc(100% - 20px);
   padding: 5px;
   height: 20px;
   margin: 10px;
 }
-.top-filters .filter-button .filter-dropdown .r {
+.filter-dropdown .r {
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
 }
-.top-filters .filter-button .filter-dropdown .r .block {
+.filter-dropdown .r .block {
   padding: 5px;
 }
-.top-filters .filter-button .filter-dropdown .r input[type="number"] {
+.filter-dropdown .r input[type="number"] {
   margin: 5px;
 }
 @media only screen and (max-width: 480px) {
-  .top-filters .filter-button .filter-dropdown .r {
+  .filter-dropdown .r {
     flex-direction: row;
   }
 }
-.top-filters .filter-button .filter-dropdown .title {
+.filter-dropdown .title {
   font-size: 10px;
   padding: 5px;
   cursor: default;
   text-shadow: none;
 }
-.top-filters .filter-button .filter-dropdown ul {
+.filter-dropdown ul {
   max-height: 120px;
   overflow: auto;
   border: 1px solid #E2E3E9;
 }
-body.dark-mode .top-filters .filter-button .filter-dropdown ul {
+body.dark-mode .filter-dropdown ul {
   border-color: #434556;
 }
-.top-filters .filter-button .filter-dropdown li {
+.filter-dropdown li {
   display: flex;
   align-items: center;
   padding: 3px 1px;
   cursor: default;
 }
-.top-filters .filter-button .filter-dropdown li input[type="checkbox"] {
+.filter-dropdown li input[type="checkbox"] {
   width: auto;
   height: auto;
   margin-right: 6px;
 }
-.top-filters .filter-button .filter-dropdown li label {
+.filter-dropdown li label {
   cursor: pointer;
   color: #000;
   font-weight: 400;
@@ -666,7 +734,7 @@ body.dark-mode .top-filters .filter-button .filter-dropdown ul {
   line-height: 13px;
   flex-grow: 1;
 }
-.top-filters .filter-button .filter-dropdown li span {
+.filter-dropdown li span {
   margin-right: 5px;
   margin-left: 5px;
   font-size: 9px;
