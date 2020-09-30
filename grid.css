@@ -575,10 +575,12 @@ body.dark-mode table.table td {
 .top-filters .inline-help span {
   right: auto;
   left: -3px;
-  font-size: 9px;
+  font-size: 7px;
   top: 17px;
   padding: 5px 10px;
-  font-weight: 600;
+}
+.top-filters .inline-help span ul {
+  font-weight: 500;
 }
 .top-filters select {
   padding: 7px;
@@ -642,7 +644,7 @@ body.dark-mode table.table td {
 .top-filters .mdc-paginator-range-buttons .button:not(.subtle).selected,
 .top-filters .mdc-paginator-range-buttons button:not(.subtle).selected {
   color: #FFFFFF;
-  background: #2274A5;
+  background: #000000;
   cursor: default;
 }
 .top-filters .mdc-paginator-range-buttons .button.subtle,
