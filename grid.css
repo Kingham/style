@@ -487,6 +487,23 @@ header .logo {
   margin-top: 10px;
   margin-left: 10px;
 }
+.inline-help {
+  border: none;
+  color: #000000;
+  background: #F7F8FA;
+  border: 1px solid #E2E3E9;
+  font-size: 7px;
+}
+.inline-help:hover {
+  color: #000000;
+  border-color: #000000;
+}
+.inline-help span {
+  color: #000000;
+  border: none;
+  font-weight: 400;
+  border: 1px solid #E2E3E9;
+}
 table.table {
   width: 100%;
 }
@@ -655,12 +672,12 @@ body.dark-mode table.table td {
 .top-filters .mdc-paginator-range-buttons button.subtle.navigate_next {
   margin-left: 0px;
 }
-.top-filters .filter-button {
+.filter-button {
   position: relative;
   z-index: 2;
 }
 @media only screen and (max-width: 480px) {
-  .top-filters .filter-button {
+  .filter-button {
     position: static;
   }
 }
