@@ -470,3 +470,48 @@ header {
         padding: 20px;
     }
 }
+
+.loading {
+    display: block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    z-index: 1;
+    margin: 50px auto;
+    left: 0px;
+    top: 0px;
+    div {
+        position: absolute;
+        border: 4px solid @green;
+        opacity: 1;
+        border-radius: 50%;
+        animation: loading-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+        &:nth-child(2) {
+            animation-delay: -0.5s;
+        }
+    }
+}
+@keyframes loading-ripple {
+    0% {
+        top: 36px;
+        left: 36px;
+        width: 0;
+        height: 0;
+        opacity: 1;
+    }
+    100% {
+        top: 0px;
+        left: 0px;
+        width: 72px;
+        height: 72px;
+        opacity: 0;
+    }
+}
+
+.loading-message {
+    text-align: center;
+    margin: 50px 0;
+    color: fadeout(@black, 50%);
+    font-weight: 600;
+    font-size: 12px;
+}
