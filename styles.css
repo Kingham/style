@@ -3,35 +3,35 @@
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: local('Biryani Light'), local('Biryani-Light'), url(https://fonts.gstatic.com/s/biryani/v6/hv-TlzNxIFoO84YddeAxGTA.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/biryani/v6/hv-TlzNxIFoO84YddeAxGTA.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Biryani';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('Biryani Regular'), local('Biryani-Regular'), url(https://fonts.gstatic.com/s/biryani/v6/hv-WlzNxIFoO84YdTUw.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/biryani/v6/hv-WlzNxIFoO84YdTUw.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Biryani';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: local('Biryani Bold'), local('Biryani-Bold'), url(https://fonts.gstatic.com/s/biryani/v6/hv-TlzNxIFoO84YddfA2GTA.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/biryani/v6/hv-TlzNxIFoO84YddfA2GTA.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Biryani';
   font-style: normal;
   font-weight: 800;
   font-display: swap;
-  src: local('Biryani ExtraBold'), local('Biryani-ExtraBold'), url(https://fonts.gstatic.com/s/biryani/v6/hv-TlzNxIFoO84Yddew1GTA.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/biryani/v6/hv-TlzNxIFoO84Yddew1GTA.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Biryani';
   font-style: normal;
   font-weight: 900;
   font-display: swap;
-  src: local('Biryani Black'), local('Biryani-Black'), url(https://fonts.gstatic.com/s/biryani/v6/hv-TlzNxIFoO84Yddcg0GTA.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/biryani/v6/hv-TlzNxIFoO84Yddcg0GTA.ttf) format('truetype');
 }
 .transition {
   transition: 0.2s all ease-in;
@@ -503,4 +503,33 @@ header .logo {
   border: none;
   font-weight: 400;
   border: 1px solid #E2E3E9;
+}
+.panel {
+  margin-bottom: 20px;
+}
+.panel .r {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  column-gap: 10px;
+}
+.panel .block {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background: #F7F8FA;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #E2E3E9;
+}
+.panel .block span {
+  font-size: 1.3rem;
+  margin-top: 10px;
+  color: #2274A5;
+  font-weight: 600;
+}
+.panel.grey {
+  background: #F7F8FA;
+  border: 1px solid #E2E3E9;
+  padding: 20px;
 }
