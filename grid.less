@@ -255,3 +255,159 @@ table.table {
         }
     }
 }
+
+.top-filters {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  .top-filters input,
+  .top-filters select,
+  .top-filters textarea,
+  .top-filters input[type="datetime-local"] {
+    border: 1px solid #E2E3E9;
+    width: 100px;
+    height: 33.5px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  body.dark-mode .top-filters input,
+  body.dark-mode .top-filters select,
+  body.dark-mode .top-filters textarea,
+  body.dark-mode .top-filters input[type="datetime-local"] {
+    background: #333442;
+    border-color: #434556;
+    color: #ffffff;
+  }
+  .top-filters > * {
+    margin-right: 10px;
+  }
+  .top-filters .mdc-paginator {
+    margin-left: auto;
+  }
+  .top-filters .mdc-paginator-container {
+    display: flex;
+    align-items: center;
+    width: 560px;
+  }
+  .top-filters .mdc-paginator-container > * {
+    margin-right: 10px;
+  }
+  .top-filters .mdc-paginator-container .mdc-paginator-range-actions {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+  .top-filters .mdc-paginator-container .mdc-paginator-range-actions > * {
+    margin-right: 10px;
+  }
+
+@media only screen and (max-width: 480px) {
+    .top-filters {
+      position: relative;
+    }
+    .top-filters .top-sorting {
+      background: #F7F8FA;
+      width: 100%;
+      padding: 5px 10px;
+      margin-top: 5px;
+      margin-bottom: 1px;
+      margin-right: 0;
+    }
+    .top-filters .inline-help {
+      display: none;
+    }
+  }
+  .top-filters .inline-help span {
+    right: auto;
+    left: -3px;
+    font-size: 7px;
+    top: 17px;
+    padding: 5px 10px;
+  }
+  .top-filters .inline-help span ul {
+    font-weight: 500;
+  }
+  .top-filters select {
+    padding: 7px;
+    width: 120px;
+  }
+  .top-filters input[type="text"] {
+    width: 140px;
+  }
+  @media only screen and (max-width: 480px) {
+    .top-filters .button.drop {
+      display: none;
+    }
+    .top-filters .mdc-paginator {
+      margin: 5px 0;
+      width: 100%;
+    }
+    .top-filters .mdc-paginator .mdc-paginator-container .mdc-paginator-range-actions {
+      margin: 0px;
+      width: 100%;
+    }
+    .top-filters .mdc-paginator .mdc-paginator-container .mdc-paginator-range-actions .mdc-paginator-range-buttons {
+      margin: 0px;
+      width: 100%;
+      justify-content: flex-start;
+      display: flex;
+    }
+    .top-filters .mdc-paginator .mdc-paginator-container .mdc-paginator-range-actions .button,
+    .top-filters .mdc-paginator .mdc-paginator-container .mdc-paginator-range-actions button {
+      margin: 0px 1px;
+    }
+  }
+  .top-filters .mdc-paginator-container {
+    width: auto;
+  }
+  @media only screen and (max-width: 480px) {
+    .top-filters .mdc-paginator-page-size {
+      display: none;
+    }
+  }
+  .top-filters .mdc-paginator-page-size select {
+    width: 80px;
+  }
+  .top-filters .mdc-paginator-range-buttons .navigate-before {
+    margin-left: 0px;
+  }
+  .top-filters .mdc-paginator-range-buttons .navigate-next {
+    margin-right: 0px;
+  }
+  .top-filters .mdc-paginator-range-buttons .button:not(.subtle),
+  .top-filters .mdc-paginator-range-buttons button:not(.subtle) {
+    padding: 5px 8px;
+    transform: translateY(1px);
+    background: transparent;
+    color: #000;
+    margin-left: 0px;
+  }
+  .top-filters .mdc-paginator-range-buttons .button:not(.subtle):hover,
+  .top-filters .mdc-paginator-range-buttons button:not(.subtle):hover {
+    background: #F7F8FA;
+  }
+  .top-filters .mdc-paginator-range-buttons .button:not(.subtle).selected,
+  .top-filters .mdc-paginator-range-buttons button:not(.subtle).selected {
+    color: #ffffff;
+    background: #000;
+    cursor: default;
+  }
+  .top-filters .mdc-paginator-range-buttons .button.subtle,
+  .top-filters .mdc-paginator-range-buttons button.subtle {
+    text-shadow: none;
+  }
+  .top-filters .mdc-paginator-range-buttons .button.subtle.navigate_next,
+  .top-filters .mdc-paginator-range-buttons button.subtle.navigate_next {
+    margin-left: 0px;
+  }
+  .filter-button {
+    position: relative;
+    z-index: 2;
+  }
+  @media only screen and (max-width: 480px) {
+    .filter-button {
+      position: static;
+    }
+  }
