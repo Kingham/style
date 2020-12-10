@@ -240,12 +240,26 @@ app {
     flex-direction: column;
   }
 }
+@media only screen and (orientation: landscape) and (max-width: 991px) {
+  app {
+    flex-direction: column;
+  }
+}
+@media only screen and (orientation: landscape) and (max-width: 991px) {
+  app {
+    overflow: hidden;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  app {
+    overflow: hidden;
+  }
+}
 .sidebar,
 .mobile-nav {
   background: #FFFFFF;
-  box-shadow: 0 3px 20px 0 rgba(34, 34, 34, 0.05);
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
   width: 225px;
+  box-shadow: 0 3px 20px 0 rgba(34, 34, 34, 0.05);
   height: 100vh;
   flex-grow: 0;
   flex-shrink: 0;
@@ -263,9 +277,21 @@ body.dark-mode .mobile-nav {
     display: none;
   }
 }
+@media only screen and (orientation: landscape) and (max-width: 991px) {
+  .sidebar,
+  .mobile-nav {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .sidebar,
+  .mobile-nav {
+    display: none;
+  }
+}
 body.dark-mode .sidebar,
 body.dark-mode .mobile-nav {
-  background: #282934;
+  background: #333442;
 }
 .sidebar nav,
 .mobile-nav nav {
@@ -320,24 +346,6 @@ body.dark-mode .mobile-nav {
   margin-bottom: 0px;
   position: relative;
 }
-.sidebar nav ul li .promo,
-.mobile-nav nav ul li .promo {
-  left: -20px;
-  height: 19px;
-  width: 19px;
-  background: #F7F8FA;
-  position: absolute;
-  box-sizing: border-box;
-  border-radius: 50%;
-  top: 6px;
-  cursor: default;
-  transform: translate(2px, 2px);
-}
-.sidebar nav ul li .promo svg,
-.mobile-nav nav ul li .promo svg {
-  width: 13px;
-  transform: translate(5px, -2px);
-}
 .sidebar nav ul li.drop > .arrow,
 .mobile-nav nav ul li.drop > .arrow {
   transition: 0.2s all ease-in;
@@ -365,7 +373,7 @@ body.dark-mode .mobile-nav {
   content: '';
   border: solid transparent;
   border-color: rgba(136, 183, 213, 0);
-  border-top-color: #000000;
+  border-top-color: #7383A8;
   border-width: 5px;
   border-radius: 0px;
   position: absolute;
@@ -397,7 +405,7 @@ body.dark-mode .mobile-nav {
 .sidebar nav ul li.drop.selected > ul,
 .mobile-nav nav ul li.drop.selected > ul {
   display: block;
-  border-left: 2px solid #F7F8FA;
+  border-left: 2px solid #E2E3E9;
 }
 .sidebar nav ul li.drop.selected > .arrow,
 .mobile-nav nav ul li.drop.selected > .arrow {
@@ -426,7 +434,6 @@ body.dark-mode .mobile-nav {
 }
 .sidebar nav ul li a.active,
 .mobile-nav nav ul li a.active {
-  color: #0AD957;
   font-weight: 700;
 }
 .sidebar nav ul li a.active:hover,

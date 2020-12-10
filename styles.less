@@ -5,6 +5,7 @@
 @yellow:            #E0CA3C;
 @orange:            #F18805;
 @blue:              #2274A5;
+@grey:  #7383A8;
 	
 @white: 			#FFFFFF;
 @black:				#000000;
@@ -30,12 +31,15 @@
 @screen-sm-max:     (@screen-md-min - 1);
 @screen-md-max:     (@screen-lg-min - 1);
 
+
 @mobile:            ~"only screen and (max-width: @{screen-xs-min})";
 @tablet:            ~"only screen and (min-width: @{screen-sm-min})";
 @tablet-strict:     ~"only screen and (min-width: @{screen-sm-min}) and (max-width: @{screen-sm-max})";
 @desktop:           ~"only screen and (min-width: @{screen-md-min})";
 @desktop-strict:    ~"only screen and (min-width: @{screen-md-min}) and (max-width: @{screen-md-max})";
 @widescreen:        ~"only screen and (min-width: @{screen-lg-min})";
+@mobile-landscape:  ~"only screen and (orientation: landscape) and (max-width: @{screen-sm-max})";
+@ipad:  ~"only screen and (min-width: 768px) and (max-width: 1024px)";
 
 @br: 4px;
 
@@ -199,6 +203,7 @@ a.title {
 }
 
 
+
 app {
     display: flex;
     height: 100vh;
@@ -206,6 +211,15 @@ app {
     position: relative;
     @media @mobile {
         flex-direction: column;
+    }
+    @media @mobile-landscape {
+        flex-direction: column;
+    }
+    @media @mobile-landscape {
+        overflow: hidden;
+    }
+    @media @ipad {
+        overflow: hidden;
     }
 }
 
@@ -230,7 +244,7 @@ app {
         display: none;
     }
     @{dark-mode} {
-        background: @darklight;
+        background: @darkwhite;
     }
     nav {
         border-top: 1px solid @border;
