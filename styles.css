@@ -255,6 +255,41 @@ app {
     overflow: hidden;
   }
 }
+.main-container {
+  flex-grow: 1;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.main-container main {
+  flex-grow: 1;
+  padding: 20px;
+  height: 100vh;
+  overflow: auto;
+  box-sizing: border-box;
+}
+@media only screen and (max-width: 480px) {
+  .main-container main {
+    padding: 0px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .main-container main {
+    width: 100vw;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .main-container {
+    width: 100vw;
+    overflow: hidden;
+  }
+}
+@media only screen and (orientation: landscape) and (max-width: 991px) {
+  .main-container {
+    width: 100vw;
+    overflow: hidden;
+  }
+}
 .sidebar,
 .mobile-nav {
   background: #FFFFFF;

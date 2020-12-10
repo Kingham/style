@@ -202,8 +202,6 @@ a.title {
     }
 }
 
-
-
 app {
     display: flex;
     height: 100vh;
@@ -223,6 +221,33 @@ app {
     }
 }
 
+.main-container {
+    flex-grow: 1;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    main {
+        flex-grow: 1;
+        padding: 20px;
+        height: 100vh;
+        overflow: auto;
+        box-sizing: border-box;
+        @media @mobile {
+            padding: 0px;
+        }
+        @media @ipad {
+            width: 100vw;
+        }
+    }
+    @media @mobile {
+        width: 100vw;
+        overflow: hidden;
+    }
+    @media @mobile-landscape {
+        width: 100vw;
+        overflow: hidden;
+    }
+}
 
 .sidebar, .mobile-nav {
     .white;
