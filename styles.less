@@ -209,10 +209,11 @@ app {
     }
 }
 
+
 .sidebar, .mobile-nav {
     .white;
-    .shadow;
     width: 225px;
+    box-shadow: 0 3px 20px 0 rgba(34,34,34,.05);
     height: 100vh;
     flex-grow: 0;
     flex-shrink: 0;
@@ -222,8 +223,14 @@ app {
     @media @mobile {
         display: none;
     }
+    @media @mobile-landscape {
+        display: none;
+    }
+    @media @ipad {
+        display: none;
+    }
     @{dark-mode} {
-        background: @darkbg;
+        background: @darklight;
     }
     nav {
         border-top: 1px solid @border;
@@ -264,22 +271,6 @@ app {
             li {
                 margin-bottom: 0px;
                 position: relative;
-                .promo {
-                    left: -20px;
-                    height: 19px;
-                    width: 19px;
-                    background: @bg;
-                    position: absolute;
-                    box-sizing: border-box;
-                    border-radius: 50%;
-                    top: 6px;
-                    cursor: default;
-                    transform: translate(2px, 2px);
-                    svg {
-                        width: 13px;
-                        transform: translate(5px, -2px);
-                    }
-                }
                 &.drop {
                     &>.arrow {
                         transition: 0.2s all ease-in;
@@ -303,7 +294,7 @@ app {
                             content: '';
                             border: solid transparent;
                             border-color: rgba(136, 183, 213, 0);
-                            border-top-color: @black;
+                            border-top-color: @grey;
                             border-width: 5px;
                             border-radius: 0px;
                             position: absolute;
@@ -325,19 +316,21 @@ app {
                             margin-bottom: 7px;
                             a {
                                 padding: 0px;
+                                // font-size: .8rem;
                             }
                         }
                     }
                     &.selected {
                         &>ul {
                             display: block;
-                            border-left: 2px solid @bg;
+                            border-left: 2px solid @border;
                         }
                         &>.arrow {
                             transform: rotate(0deg) translateX(3px) translateY(-2px);
                         }
                         &>a {
                             font-weight: 600;
+                            
                         }
                     }
                 }
@@ -354,7 +347,6 @@ app {
                         margin-bottom: 0px;
                     }
                     &.active {
-                        color: @green;
                         font-weight: 700;
                         &:hover {
                             text-decoration: none;
@@ -384,8 +376,7 @@ app {
             }
         }
     }
-  }
-
+}
 
 html {
   font-size: 12px;
