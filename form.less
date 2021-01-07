@@ -1,6 +1,6 @@
 @import 'https://kingham.github.io/style/styles.less';
 
-input, input[type="text"], input[type="number"], select {
+input, input[type="text"], input[type="number"], select, textarea {
     width: 100%;
     font-family: inherit;
     box-sizing: border-box;
@@ -34,7 +34,11 @@ input, input[type="text"], input[type="number"], select {
     }
 }
 
-input[readonly], input[disabled], select[readonly], select[disabled] {
+textarea {
+    min-height: 100px;
+}
+
+input[readonly], input[disabled], select[readonly], select[disabled], textarea {
     background: @bg;
     @{dark-mode} {
         background: @darkwhite;
@@ -42,7 +46,7 @@ input[readonly], input[disabled], select[readonly], select[disabled] {
 }
 
 
-input[readonly], input[disabled], select[readonly], select[disabled] {
+input[readonly], input[disabled], select[readonly], select[disabled], textarea {
     background: @bg;
     @{dark-mode} {
         background: @darkwhite;
