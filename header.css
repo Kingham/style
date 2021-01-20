@@ -648,11 +648,11 @@ header {
   padding: 0px 20px 20px 20px;
   box-sizing: border-box;
 }
-header:not(.top) {
+header:not(.desktop-header) {
   flex-wrap: nowrap;
 }
 @media only screen and (max-width: 480px) {
-  header:not(.top) {
+  header:not(.desktop-header) {
     flex-wrap: wrap;
   }
 }
@@ -674,18 +674,18 @@ header:not(.top) {
   }
 }
 @media only screen and (orientation: landscape) and (max-width: 991px) {
-  header.top {
+  header.desktop-header {
     display: none;
   }
-  header:not(.top) {
+  header:not(.desktop-header) {
     flex-wrap: wrap;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  header.top {
+  header.desktop-header {
     display: none;
   }
-  header:not(.top) {
+  header:not(.desktop-header) {
     flex-wrap: wrap;
   }
 }
@@ -708,7 +708,6 @@ header:not(.top) {
 }
 header .menu-icon {
   cursor: pointer;
-  display: inline-block;
   float: right;
   padding: 28px 14px;
   position: relative;
@@ -826,13 +825,13 @@ header.mobile-header .mobile-nav .button.drop .dropper {
 header.mobile-header .mobile-nav[hidden] {
   display: none;
 }
-header.top {
+header.desktop-header {
   height: 70px;
   flex-shrink: 0;
   padding-bottom: 0px;
 }
 @media only screen and (max-width: 480px) {
-  header.top {
+  header.desktop-header {
     display: none;
   }
 }
