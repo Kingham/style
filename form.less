@@ -57,6 +57,10 @@ input[readonly], input[disabled], select[readonly], select[disabled], textarea {
     display: flex;
     align-items: center;
     padding: @padding @padding @padding @padding * 2;
+    &.col {
+        flex-direction: column;
+        width: 100%;
+    }
     input[type="checkbox"] {
         height: auto;
         width: auto;
