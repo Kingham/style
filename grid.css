@@ -398,8 +398,9 @@ app,
   font-weight: 600;
   font-size: 12px;
 }
-.static-row-wrapper table.table tr:hover {
+.static-row-wrapper table.table tbody tr:hover {
   background: transparent;
+  cursor: default;
 }
 table.table {
   width: 100%;
