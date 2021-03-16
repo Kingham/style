@@ -587,6 +587,7 @@ body.dark-mode table.table td {
   display: flex;
   flex-direction: row;
   padding: 2px;
+  height: 23px;
 }
 .filter-button.bulk-select .filter-dropdown .r .block label {
   width: auto;
