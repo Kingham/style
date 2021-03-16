@@ -583,6 +583,10 @@ body.dark-mode table.table td {
   left: auto;
   right: 0px;
 }
+.filter-button.bulk-select .filter-dropdown .r .block {
+  display: flex;
+  flex-direction: row;
+}
 .filter-dropdown {
   position: absolute;
   top: 30px;
