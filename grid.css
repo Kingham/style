@@ -592,7 +592,8 @@ body.dark-mode table.table td {
 }
 .filter-button.bulk-select .filter-dropdown .r .block label .block {
   margin: 0px;
-  width: 0px;
+  width: auto;
+  padding: 0px;
 }
 .filter-button.bulk-select .filter-dropdown .r .block label input[type="text"],
 .filter-button.bulk-select .filter-dropdown .r .block label input[type="number"] {
