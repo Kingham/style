@@ -590,7 +590,11 @@ body.dark-mode table.table td {
 .filter-button.bulk-select .filter-dropdown .r .block label {
   width: auto;
 }
-.filter-button.bulk-select .filter-dropdown .r .block label input[type="text"] {
+.filter-button.bulk-select .filter-dropdown .r .block label .block {
+  margin: 0px;
+}
+.filter-button.bulk-select .filter-dropdown .r .block label input[type="text"],
+.filter-button.bulk-select .filter-dropdown .r .block label input[type="number"] {
   width: 50px;
   height: 20px;
 }
