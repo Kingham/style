@@ -586,9 +586,11 @@ body.dark-mode table.table td {
 .filter-button.bulk-select .filter-dropdown .r .block {
   display: flex;
   flex-direction: row;
+  padding: 2px;
 }
 .filter-button.bulk-select .filter-dropdown .r .block label {
   width: auto;
+  margin-top: 3px;
 }
 .filter-button.bulk-select .filter-dropdown .r .block label .block {
   margin: 0px;
