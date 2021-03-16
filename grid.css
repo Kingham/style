@@ -592,6 +592,7 @@ body.dark-mode table.table td {
 }
 .filter-button.bulk-select .filter-dropdown .r .block label .block {
   margin: 0px;
+  width: 0px;
 }
 .filter-button.bulk-select .filter-dropdown .r .block label input[type="text"],
 .filter-button.bulk-select .filter-dropdown .r .block label input[type="number"] {
@@ -623,6 +624,7 @@ body.dark-mode table.table td {
   width: auto;
   min-width: 13px;
   height: 20px;
+  margin-right: 5px;
 }
 .filter-dropdown .r {
   display: flex;
