@@ -613,9 +613,11 @@ body.dark-mode table.table td {
 }
 .filter-button.bulk-select .filter-dropdown .r .block label input[type="text"],
 .filter-button.bulk-select .filter-dropdown .r .block label input[type="number"] {
-  width: 50px;
+  width: 40px;
   height: 20px;
   margin: 0px 2px;
+  padding: 3px;
+  font-size: 11px;
 }
 .filter-dropdown {
   position: absolute;
