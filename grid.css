@@ -583,13 +583,10 @@ body.dark-mode table.table td {
   left: auto;
   right: 0px;
 }
-.filter-button.bulk-select .filter-dropdown .r:last-child {
-  padding: 10px;
-}
 .filter-button.bulk-select .filter-dropdown .r .block {
   display: flex;
   flex-direction: row;
-  padding: 2px;
+  padding: 5px;
   height: 13px;
 }
 .filter-button.bulk-select .filter-dropdown .r .block label {
