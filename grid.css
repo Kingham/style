@@ -584,8 +584,6 @@ body.dark-mode table.table td {
   right: 0px;
 }
 .filter-button.bulk-select .filter-dropdown .r:last-child {
-  margin-top: 5px;
-  margin-left: 5px;
   margin-bottom: 5px;
 }
 .filter-button.bulk-select .filter-dropdown .r .block {
