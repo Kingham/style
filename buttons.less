@@ -25,6 +25,13 @@ button, .button {
     }
     &.save, &.submit {
         .button-template(@green);
+        &.subtle {
+            color: @white;
+        }
+    }
+    &.blue, &.blue.subtle {
+        background: @blue;
+        color: @white;
     }
     &.subtle {
         .button-template(@bg);
