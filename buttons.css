@@ -430,20 +430,26 @@ button.delete:hover,
 button.save,
 .button.save,
 button.submit,
-.button.submit {
+.button.submit,
+button.green,
+.button.green {
   background: #0AD957;
   color: #FFFFFF;
 }
 button.save:hover,
 .button.save:hover,
 button.submit:hover,
-.button.submit:hover {
+.button.submit:hover,
+button.green:hover,
+.button.green:hover {
   background: #09c14d;
 }
 button.save.subtle,
 .button.save.subtle,
 button.submit.subtle,
-.button.submit.subtle {
+.button.submit.subtle,
+button.green.subtle,
+.button.green.subtle {
   color: #FFFFFF;
 }
 button.blue,
