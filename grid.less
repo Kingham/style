@@ -190,27 +190,38 @@ table.table {
       .filter-dropdown {
         left: auto;
         right: 0px;
+        .r:last-child {
+          padding: 10px;
+        }
         .r .block {
           display: flex;
           flex-direction: row;
           padding: 2px;
-          height: 23px;
+          height: 13px;
           label {
             width: auto;
+            font-weight: 400;
+            color: @black;
             margin-top: 3px;
             .block {
               margin: 0px;
               width: auto;
               padding: 0px;
             }
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+              -webkit-appearance: none;
+              margin: 0;
+            }
+
+            input[type=number] {
+              -moz-appearance: textfield;
+            }
             input[type="text"], input[type="number"] {
               width: 50px;
               height: 20px;
-              margin: 0px;
+              margin: 0px 2px;
             }
-          }
-          &:last-child{
-            padding: 10px;
           }
         }
       }
