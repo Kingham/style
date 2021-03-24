@@ -402,7 +402,7 @@ button,
 .button {
   display: inline-flex;
   padding: 10px 20px;
-  border: none;
+  border: 1px solid transparent;
   cursor: pointer;
   font-size: 1rem;
   border-radius: 4px;
@@ -422,6 +422,7 @@ button.delete,
 .button.delete {
   background: #C53826;
   color: #FFFFFF;
+  border-color: #9a2c1e;
 }
 button.delete:hover,
 .button.delete:hover {
@@ -435,6 +436,7 @@ button.green,
 .button.green {
   background: #0AD957;
   color: #FFFFFF;
+  border-color: #08a843;
 }
 button.save:hover,
 .button.save:hover,
@@ -457,6 +459,7 @@ button.blue,
 button.blue.subtle,
 .button.blue.subtle {
   background: #2274A5;
+  border-color: #19567b;
   color: #FFFFFF;
 }
 button.subtle,
@@ -482,6 +485,14 @@ button.outline,
 .button.outline {
   box-shadow: inset 0 0 0 1px #E2E3E9;
   background: transparent;
+}
+button.orange,
+.button.orange,
+button.amber,
+.button.amber {
+  background: #F18805;
+  color: #FFFFFF;
+  border-color: #bf6c04;
 }
 .drop {
   position: relative;
