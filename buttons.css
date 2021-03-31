@@ -419,13 +419,17 @@ button.small,
   font-size: 0.8rem;
 }
 button.delete,
-.button.delete {
+.button.delete,
+button.red,
+.button.red {
   background: #C53826;
   color: #FFFFFF;
   border-color: #9a2c1e;
 }
 button.delete:hover,
-.button.delete:hover {
+.button.delete:hover,
+button.red:hover,
+.button.red:hover {
   background: #b03222;
 }
 button.save,
