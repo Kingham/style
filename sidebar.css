@@ -496,6 +496,7 @@ body.dark-mode .mobile-nav {
   height: 19px;
   width: 19px;
   background: #F7F8FA;
+  border: 1px solid #E2E3E9;
   position: absolute;
   box-sizing: border-box;
   border-radius: 50%;
@@ -516,11 +517,11 @@ body.dark-mode .mobile-nav {
   content: '';
   border: solid transparent;
   border-color: rgba(136, 183, 213, 0);
-  border-top-color: #7383A8;
+  border-top-color: #000000;
   border-width: 5px;
   border-radius: 0px;
   position: absolute;
-  top: 8px;
+  top: 7px;
   left: 4px;
 }
 .sidebar nav ul li.drop ul li.drop > .arrow,
@@ -548,7 +549,7 @@ body.dark-mode .mobile-nav {
 .sidebar nav ul li.drop.selected > ul,
 .mobile-nav nav ul li.drop.selected > ul {
   display: block;
-  border-left: 2px solid #E2E3E9;
+  border-left: 1px solid #E2E3E9;
 }
 .sidebar nav ul li.drop.selected > .arrow,
 .mobile-nav nav ul li.drop.selected > .arrow {
