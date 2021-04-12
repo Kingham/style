@@ -221,6 +221,24 @@
                 }
             },
 
+            {
+                selector: '.middle',
+                style: {
+                'label': 'data(label)',
+                'background-image': 'data(url)',
+                'background-fit': 'contain',
+                'width': 60,
+                'height': 40,
+                content: "data(label)",
+                "text-valign": "center",
+                "text-halign": "center",
+                'border-width': 3,
+                'border-color': '#1f3969',
+                'shape': 'hexagon'
+                
+                }
+            },
+
             // {
             //     selector: '#a',
             //     style: {
@@ -253,7 +271,9 @@
 
             });
 
-            cy.$('#bosch, #makita, #velux, #vaillant').addClass('supplier');
+            cy.$('#nmbs').addClass('middle');
+
+            // cy.$('#bosch, #makita, #velux, #vaillant').addClass('supplier');
 
             cy.$('#alsford, #allbees, #jt, #ace').addClass('member');
 
