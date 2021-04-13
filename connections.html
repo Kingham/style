@@ -66,9 +66,9 @@
         <script
         src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-        crossorigin="anonymous"></script>
+        crossorigin="null"></script>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.18.2/cytoscape.min.js" integrity="sha512-CBGCXtszkG5rYlQSTNUzk54/731Kz28WPk2uT1GCPCqgfVRJ2v514vzzf16HuGX9WVtE7JLqRuAERNAzFZ9Hpw==" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/cytoscape@3.18.2/dist/cytoscape.min.js" integrity="sha512-CBGCXtszkG5rYlQSTNUzk54/731Kz28WPk2uT1GCPCqgfVRJ2v514vzzf16HuGX9WVtE7JLqRuAERNAzFZ9Hpw==" crossorigin="null"></script>
 
         
     </head>
@@ -100,7 +100,7 @@
 
             elements: [
             { 
-                data: { id: 'nmbs', label: 'NMBS', url: 'url(https://d.pr/i/V37xS2+)' }, position: {x: 200, y: 300}
+                data: { id: 'nmbs', label: 'NMBS', url: 'url("NMBS-Logo.png")' }, position: {x: 200, y: 200}
             },
             { 
                 data: { id: 'bosch', label: 'Bosch', url: 'https://d.pr/i/V37xS2+' }, position: {x: 50, y: 100}
@@ -129,16 +129,16 @@
 
 
             { 
-                data: { id: 'alsford', label: 'Alsford', url: 'NMBS-Logo.png' }, position: {x: 100, y: 500}
+                data: { id: 'alsford', label: 'Alsford', url: 'NMBS-Logo.png' }, position: {x: 50, y: 300}
             },
             { 
-                data: { id: 'ace', label: 'Ace Fixings', url: 'NMBS-Logo.png' }, position: {x: 200, y: 500}
+                data: { id: 'ace', label: 'Ace Fixings', url: 'NMBS-Logo.png' }, position: {x: 150, y: 300}
             },
             { 
-                data: { id: 'jt', label: 'JT Akinson', url: 'NMBS-Logo.png' }, position: {x: 300, y: 500}
+                data: { id: 'jt', label: 'JT Akinson', url: 'NMBS-Logo.png' }, position: {x: 250, y: 300}
             },
             { 
-                data: { id: 'allbees', label: 'Allbees', url: 'NMBS-Logo.png' }, position: {x: 400, y: 500}
+                data: { id: 'allbees', label: 'Allbees', url: 'NMBS-Logo.png' }, position: {x: 350, y: 300}
             },
             { 
                 data: { id: 'baas', source: 'nmbs', target: 'alsford' }
@@ -154,11 +154,67 @@
             },
 
             { 
-                data: { id: 'wolseley', label: 'Wolseley', url: 'NMBS-Logo.png' }, position: {x: 500, y: 300}
+                data: { id: 'pj', label: 'PJ Plumbing', url: 'NMBS-Logo.png' }, position: {x: 50, y: 400}
+            },
+            { 
+                data: { id: 'brick', label: 'Brick Masters', url: 'NMBS-Logo.png' }, position: {x: 150, y: 400}
+            },
+            { 
+                data: { id: 'onet', label: '123 Plumbing', url: 'NMBS-Logo.png' }, position: {x: 250, y: 400}
+            },
+            { 
+                data: { id: 'ghb', label: 'GH Buildings', url: 'NMBS-Logo.png' }, position: {x: 350, y: 400}
+            },
+
+
+
+            { 
+                data: { id: 'wat', label: 'WaterWorks', url: 'NMBS-Logo.png' }, position: {x: 100, y: 400}
+            },
+            { 
+                data: { id: 'heat', label: 'Heating Specialists', url: 'NMBS-Logo.png' }, position: {x: 200, y: 400}
+            },
+            { 
+                data: { id: 'concrete', label: 'Concrete Smiths', url: 'NMBS-Logo.png' }, position: {x: 300, y: 400}
+            },
+            { 
+                data: { id: 'sgg', label: 'SGG Buildings', url: 'NMBS-Logo.png' }, position: {x: 400, y: 400}
+            },
+
+
+
+
+            { 
+                data: { id: 'baas8', source: 'ace', target: 'ghb' }
+            },
+            { 
+                data: { id: 'baas28', source: 'ace', target: 'brick' }
+            },
+            { 
+                data: { id: 'baas38', source: 'jt', target: 'pj' }
+            },
+            { 
+                data: { id: 'baas48', source: 'jt', target: 'brick' }
             },
 
             { 
-                data: { id: 'tp', label: 'Travis Perkins', url: 'NMBS-Logo.png' }, position: {x: 600, y: 300}
+                data: { id: 'baas38', source: 'jt', target: 'onet' }
+            },
+            { 
+                data: { id: 'baas48', source: 'allbees', target: 'brick' }
+            },
+
+
+
+
+
+
+            { 
+                data: { id: 'wolseley', label: 'Wolseley', url: 'NMBS-Logo.png' }, position: {x: 500, y: 200}
+            },
+
+            { 
+                data: { id: 'tp', label: 'Travis Perkins', url: 'NMBS-Logo.png' }, position: {x: 600, y: 200}
             },
 
             { 
@@ -177,8 +233,8 @@
                 'label': 'data(label)',
                 'background-image': 'data(url)',
                 'background-fit': 'contain',
-                'width': 80,
-                'height': 80,
+                'width': 70,
+                'height': 70,
                 content: "data(label)",
                 "text-valign": "center",
                 "text-halign": "center",
@@ -192,12 +248,13 @@
                 'label': 'data(label)',
                 'background-image': 'data(url)',
                 'background-fit': 'contain',
-                'width': 40,
+                'width': 50,
                 'height': 40,
                 content: "data(label)",
+                "font-size": 5,
                 "text-valign": "center",
                 "text-halign": "center",
-                'border-width': 3,
+                'border-width': 2,
                 'border-color': '#ef511f',
                 'shape': 'diamond'
                 }
@@ -273,9 +330,9 @@
 
             cy.$('#nmbs').addClass('middle');
 
-            // cy.$('#bosch, #makita, #velux, #vaillant').addClass('supplier');
+            cy.$('#pj, #brick, #onet, #ghb, #wat, #heat, #concrete, #sgg').addClass('supplier');
 
-            cy.$('#alsford, #allbees, #jt, #ace').addClass('member');
+            cy.$('#alsford, #allbees, #jt, #ace, #wolseley, #tp').addClass('member');
 
       
         </script>
