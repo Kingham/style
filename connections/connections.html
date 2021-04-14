@@ -278,6 +278,14 @@
             },
 
             {
+                selector: '.system',
+                style: {
+                    'border-width': 3,
+                    'border-color': 'orange',
+                }
+            },
+
+            {
                 selector: '.member',
                 style: {
                 // 'label': 'data(label)',
@@ -288,8 +296,8 @@
                 // content: "data(label)",
                 "text-valign": "center",
                 "text-halign": "center",
-                'border-width': 3,
-                'border-color': '#1f3969',
+                // 'border-width': 3,
+                // 'border-color': '#1f3969',
                 'shape': 'round-rectangle'
                 
                 }
@@ -306,8 +314,8 @@
                 // content: "data(label)",
                 "text-valign": "center",
                 "text-halign": "center",
-                'border-width': 3,
-                'border-color': '#1f3969',
+                // 'border-width': 3,
+                // 'border-color': '#1f3969',
                 'shape': 'hexagon'
                 
                 }
@@ -350,6 +358,8 @@
             cy.$('#pj, #brick, #onet, #ghb, #wat, #heat, #concrete, #sgg').addClass('supplier');
 
             cy.$('#alsford, #allbees, #jt, #ace, #wolseley, #tp').addClass('member');
+
+            cy.$('#nmbs, #wolseley').addClass('system');
 
       
         </script>
