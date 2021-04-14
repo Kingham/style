@@ -154,31 +154,31 @@
             },
 
             { 
-                data: { id: 'pj', label: 'PJ Plumbing'}, position: {x: 50, y: 400}
+                data: { id: 'pj', label: 'PJ Plumbing', url: 'a.png'}, position: {x: 50, y: 400}
             },
             { 
-                data: { id: 'brick', label: 'Brick Masters' }, position: {x: 150, y: 400}
+                data: { id: 'brick', label: 'Brick Masters', url: 'b.png' }, position: {x: 150, y: 400}
             },
             { 
-                data: { id: 'onet', label: '123 Plumbing' }, position: {x: 250, y: 400}
+                data: { id: 'onet', label: '123 Plumbing', url: 'c.png' }, position: {x: 250, y: 400}
             },
             { 
-                data: { id: 'ghb', label: 'GH Buildings' }, position: {x: 350, y: 400}
+                data: { id: 'ghb', label: 'GH Buildings', url: 'd.png' }, position: {x: 350, y: 400}
             },
 
 
 
             { 
-                data: { id: 'wat', label: 'WaterWorks' }, position: {x: 100, y: 400}
+                data: { id: 'wat', label: 'WaterWorks', url: 'e.png' }, position: {x: 100, y: 400}
             },
             { 
-                data: { id: 'heat', label: 'Heating Specialists'}, position: {x: 200, y: 400}
+                data: { id: 'heat', label: 'Heating Specialists', url: 'f.png'}, position: {x: 200, y: 400}
             },
             { 
-                data: { id: 'concrete', label: 'Concrete Smiths' }, position: {x: 300, y: 400}
+                data: { id: 'concrete', label: 'Concrete Smiths', url: 'g.png' }, position: {x: 300, y: 400}
             },
             { 
-                data: { id: 'sgg', label: 'SGG Buildings' }, position: {x: 400, y: 400}
+                data: { id: 'sgg', label: 'SGG Buildings', url: 'h.png' }, position: {x: 400, y: 400}
             },
 
 
@@ -255,25 +255,24 @@
                 "text-valign": "center",
                 "text-halign": "center",
                 'font-size': 8,
-                'color': 'transparent'
+                'color': 'transparent',
+                'shape': 'diamond'
                 }
             },
 
             {
                 selector: '.supplier',
                 style: {
-                'label': 'data(label)',
+                // 'label': 'data(label)',
                 'background-image': 'data(url)',
                 'background-fit': 'contain',
-                'width': 50,
-                'height': 30,
-                content: "data(label)",
+                'width': 40,
+                'height': 40,
+                // content: "data(label)",
                 "font-size": 5,
                 "text-valign": "center",
                 "text-halign": "center",
-                'border-width': 2,
-                'border-color': '#ef511f',
-                'shape': 'diamond',
+                'shape': 'ellipse',
                 'color': 'black'
                 }
             },
