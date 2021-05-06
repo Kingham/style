@@ -471,6 +471,27 @@ body.dark-mode table.table td {
 .block .autocomplete-container {
   flex-grow: 1;
 }
+.block._60l label {
+  width: 60px;
+}
+.block._80l label {
+  width: 80px;
+}
+.block._100l label {
+  width: 100px;
+}
+.block._120l label {
+  width: 120px;
+}
+.block._140l label {
+  width: 140px;
+}
+.block._160l label {
+  width: 160px;
+}
+.block._180l label {
+  width: 180px;
+}
 @media only screen and (max-width: 480px) {
   .top-filters {
     position: relative;
