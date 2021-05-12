@@ -750,7 +750,7 @@ body.dark-mode .top-filters input[type="datetime-local"] {
   color: #ffffff;
 }
 .top-filters > * {
-  margin-right: 10px;
+  margin-right: 6px;
 }
 .top-filters .mdc-paginator {
   margin-left: auto;
