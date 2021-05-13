@@ -655,7 +655,7 @@ body.dark-mode table.table td {
   width: 100%;
   min-width: auto;
 }
-.filter-dropdown input[type="text"] {
+.filter-dropdown ul input[type="text"] {
   width: calc(100% - 20px);
   padding: 5px;
   height: 20px;
