@@ -846,8 +846,7 @@ body.dark-mode .top-filters input[type="datetime-local"] {
 }
 .top-filters .mdc-paginator-range-buttons .button:not(.subtle),
 .top-filters .mdc-paginator-range-buttons button:not(.subtle) {
-  padding: 5px 8px;
-  transform: translateY(1px);
+  padding: 5px 6px;
   background: transparent;
   color: #000;
   margin-left: 0px;
