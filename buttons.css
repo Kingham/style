@@ -458,14 +458,6 @@ button.green.subtle,
 .button.green.subtle {
   color: #FFFFFF;
 }
-button.blue,
-.button.blue,
-button.blue.subtle,
-.button.blue.subtle {
-  background: #2274A5;
-  border-color: #19567b;
-  color: #FFFFFF;
-}
 button.subtle,
 .button.subtle {
   background: #F7F8FA;
