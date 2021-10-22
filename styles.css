@@ -1,38 +1,3 @@
-@font-face {
-  font-family: 'Biryani';
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/biryani/v6/hv-TlzNxIFoO84YddeAxGTA.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Biryani';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/biryani/v6/hv-WlzNxIFoO84YdTUw.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Biryani';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/biryani/v6/hv-TlzNxIFoO84YddfA2GTA.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Biryani';
-  font-style: normal;
-  font-weight: 800;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/biryani/v6/hv-TlzNxIFoO84Yddew1GTA.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Biryani';
-  font-style: normal;
-  font-weight: 900;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/biryani/v6/hv-TlzNxIFoO84Yddcg0GTA.ttf) format('truetype');
-}
 .transition {
   transition: 0.2s all ease-in;
 }
@@ -297,10 +262,6 @@ app,
 }
 html {
   font-size: 12px;
-}
-body,
-body * {
-  font-family: 'Biryani', sans-serif;
 }
 app,
 .main {
